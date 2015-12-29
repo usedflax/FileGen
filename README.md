@@ -2,7 +2,7 @@
 Lightweight file/folder generator for Windows.
 
 ## Setting Up
-If you're compiling this yourself, make sure to create a directory somewhere and place the following binaries it it:
+If you're compiling this yourself, reference [T-Alex's WPF Controls](https://github.com/T-Alex/WPFControls), make sure to create a directory somewhere and place the following binaries in it after compiling:
 - FileGen.exe
 - FileGen GUI.exe
 - TAlex.WPF.Controls.dll
