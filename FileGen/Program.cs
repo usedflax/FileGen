@@ -25,9 +25,14 @@ namespace FileGen
         enum Action { None, Files, Folders, Both };
 
         /// <summary>
-        /// 
+        ///     Entry point.
+        ///     Gets input and generates files.
         /// </summary>
-        /// <param name="args"></param>
+        /// <param name="args">
+        ///     Must follow format: path -action count.
+        ///     Example: filegen "C:\Henta-I mean work stuff\" -fd 420
+        ///     See readme.md for additional details
+        /// </param>
         static void Main(string[] args)
         {
             DirectoryInfo dir = null;
@@ -41,7 +46,9 @@ namespace FileGen
             }
             else // Get inputs via prompts
             {
-                PromptInputs(ref dir, ref action, ref count);
+                dir = GetPath();
+                action = GetAction();
+                count = GetCount();
             }
 
             // Create files
@@ -71,12 +78,12 @@ namespace FileGen
         }
 
         /// <summary>
-        /// 
+        ///     Gets arguments and assigns a path, action, and count from them.
         /// </summary>
-        /// <param name="args"></param>
-        /// <param name="dir"></param>
-        /// <param name="action"></param>
-        /// <param name="count"></param>
+        /// <param name="args">Arguments listed in command line.</param>
+        /// <param name="dir">Where to create files/folders?</param>
+        /// <param name="action">Create files, folders, or both?</param>
+        /// <param name="count">How many files and folders?</param>
         static void GetArguments(ref string[] args, ref DirectoryInfo dir,
             ref Action action, ref int count)
         {
@@ -126,23 +133,9 @@ namespace FileGen
         }
 
         /// <summary>
-        /// 
+        ///     Get path to create files/folders in from input.
         /// </summary>
-        /// <param name="dir"></param>
-        /// <param name="action"></param>
-        /// <param name="count"></param>
-        static void PromptInputs(ref DirectoryInfo dir, 
-            ref Action action, ref int count)
-        {
-            dir = GetPath();
-            action = GetAction();
-            count = GetCount();
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <returns></returns>
+        /// <returns>DirectoryInfo to create files/folders in.</returns>
         static DirectoryInfo GetPath()
         {
             DirectoryInfo dir;
@@ -157,9 +150,10 @@ namespace FileGen
         }
 
         /// <summary>
-        /// 
+        ///     Prompt for what the user wants to create.
+        ///     Files, folders, or both?
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Enum Action with value according to operation</returns>
         static Action GetAction()
         {
             Action action = Action.None;
@@ -201,22 +195,22 @@ namespace FileGen
         }
 
         /// <summary>
-        /// 
+        ///     Get the amount of files/folders to create from input.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Int32 containing the amount of files/folders to create.</returns>
         static int GetCount()
         {
             Console.Write("How many?: ");
-            int count = Convert.ToInt32(Console.ReadLine());
+            int count = int.Parse(Console.ReadLine());
 
             return count;
         }
 
         /// <summary>
-        /// 
+        ///     Create files in directory according to amount given.
         /// </summary>
-        /// <param name="dir"></param>
-        /// <param name="count"></param>
+        /// <param name="dir">Directory to create files in.</param>
+        /// <param name="count">Amount of files to create.</param>
         static void CreateFiles(DirectoryInfo dir, int count)
         {
             for (int i = 1; i <= count; i++)
@@ -226,10 +220,10 @@ namespace FileGen
         }
 
         /// <summary>
-        /// 
+        ///     Create folders in directory according to amount given.
         /// </summary>
-        /// <param name="dir"></param>
-        /// <param name="count"></param>
+        /// <param name="dir">Directory to create folders in.</param>
+        /// <param name="count">Amount of folders to create.</param>
         static void CreateFolders(DirectoryInfo dir, int count)
         {
             for (int i = 1; i <= count; i++)
