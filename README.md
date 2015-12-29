@@ -1,6 +1,15 @@
 # FileGen
 Lightweight file/folder generator for Windows.
 
+## Setting Up
+If you're compiling this yourself, make sure to create a directory somewhere and place the following binaries it it:
+- FileGen.exe
+- FileGen GUI.exe
+- TAlex.WPF.Controls.dll
+
+You'll be able to use the command line version with "FileGen.exe" or the GUI version with "FileGen GUI.exe".
+"FileGen.exe" and "TAlex.WPF.Controls.dll" are required to use the GUI.
+
 ## Command Line Arguments
 To use FileGen via the command line, you must run it using the following format:
 ```
@@ -22,9 +31,6 @@ filegen "D:\Henta-I mean work stuff\" -fd 420
 - The name of the .exe (FileGen) can be entered in any case (FileGen, filegen, fiLeGen, etc.), with or without the .exe extension.
 - The path will require surrounding quotes if it includes spaces (otherwise they're optional).
 - To create files and folders, the order of "f" and "d" does not matter ("-fd" or "-df").
-
-## The GUI
-Right now, there is only one thing to say here: **DO NOT DELETE FileGen.exe!** or else the GUI version will not work. It relies on the command line version to do the actual operations.
 
 ## To Do
 - GUI (via WPF)
