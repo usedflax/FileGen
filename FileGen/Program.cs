@@ -57,24 +57,22 @@ namespace FileGen
                 case Action.Files:
                     CreateFiles(dir, count);
                     Console.WriteLine("{0} files created in \"{1}\".",
-                        count, dir.ToString());
+                        count, dir);
                     break;
                 case Action.Folders:
                     CreateFolders(dir, count);
                     Console.WriteLine("{0} folders created in \"{1}\".",
-                        count, dir.ToString());
+                        count, dir);
                     break;
                 case Action.Both:
                     CreateFiles(dir, count);
                     CreateFolders(dir, count);
                     Console.WriteLine("{0} files and folders created in \"{1}\".", 
-                        count, dir.ToString());
+                        count, dir);
                     break;
                 default:
                     return;
             }
-
-            Console.ReadLine();
         }
 
         /// <summary>

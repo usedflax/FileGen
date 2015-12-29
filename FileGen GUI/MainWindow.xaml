@@ -1,13 +1,47 @@
-﻿<Window x:Class="FileGenGUI.MainWindow"
+﻿<Window xmlns:talex="http://schemas.talex-soft.com/2010/xaml/presentation"  x:Class="FileGenGUI.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FileGenGUI"
         mc:Ignorable="d"
-        Title="FileGen GUI" Height="350" Width="525"
+        Title="FileGen GUI" Height="185" Width="330"
         ResizeMode="CanMinimize" Background="#F0F0F0">
     <Grid>
-        
+        <StackPanel Margin="0,5,0,0">
+            <GroupBox Header="Directory" Height="51" Width="300" VerticalAlignment="Top">
+                <GroupBox.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}"/>
+                </GroupBox.BorderBrush>
+                <Grid>
+                    <Button x:Name="BtnBrowse" Content="_Browse" Height="23" Width="75" HorizontalAlignment="Left" Click="BtnBrowse_Click" TabIndex="0" />
+                    <TextBox x:Name="TxtDirectory" Width="206" Height="20" HorizontalAlignment="Right" TabIndex="1"/>
+                </Grid>
+            </GroupBox>    
+            <Grid Margin="0,5,0,5" Width="300">
+                <GroupBox Header="Generate" Height="48" Width="195" HorizontalAlignment="Left">
+                    <GroupBox.BorderBrush>
+                        <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ActiveBorderColorKey}}"/>
+                    </GroupBox.BorderBrush>
+                    <Grid>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <CheckBox x:Name="ChkFiles" Content="Files" VerticalAlignment="Center" Margin="0, 0, 30, 0" TabIndex="2"/>
+                            <CheckBox x:Name="ChkFolders" Content="Folders" VerticalAlignment="Center" Margin="0, 0, 10, 0" TabIndex="3"/>
+                        </StackPanel>
+                    </Grid>
+                </GroupBox>
+                <GroupBox Header="Count" Height="48" Width="100" HorizontalAlignment="Right">
+                    <talex:NumericUpDown x:Name="NumCount" TabIndex="4" Maximum="2147483647"/>
+                </GroupBox>
+            </Grid>
+            <Grid HorizontalAlignment="Center" Width="300">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="BtnClear" Content="_Clear" Height="23" Width="75" HorizontalAlignment="Left" Click="BtnClear_Click" TabIndex="5" />
+                <Button x:Name="BtnRun" Content="_Run" Height="23" Width="74" HorizontalAlignment="Center" Click="BtnRun_Click" IsDefault="True" TabIndex="6"/>
+                <Button x:Name="BtnExit" Content="E_xit" Height="23" Width="75" HorizontalAlignment="Right" Click="BtnExit_Click" IsCancel="True" TabIndex="7"/>
+            </Grid>
+        </StackPanel>
     </Grid>
 </Window>

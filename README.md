@@ -36,3 +36,6 @@ Right now, there is only one thing to say here: **DO NOT DELETE FileGen.exe!** o
 - Allow random text in files
 - Help command
 - Cross-platform (Unix/Linux)
+
+## License
+FileGen is under the [MIT license](LICENSE).
