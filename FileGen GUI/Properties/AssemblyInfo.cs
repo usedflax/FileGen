@@ -8,7 +8,7 @@ using System.Windows;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("FileGen GUI")]
-[assembly: AssemblyDescription("A lightweight file/folder generator for Windows.")]
+[assembly: AssemblyDescription("Lightweight file/folder generator for Windows.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("FileGen GUI")]
