@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileGen GUI", "File Generator GUI\FileGen GUI.csproj", "{83EB87A1-E39D-4982-83F3-47C7F96538F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileGen", "File Generator\FileGen.csproj", "{EBC2E774-EBC5-44B6-87A3-6D6BDB69BD09}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83EB87A1-E39D-4982-83F3-47C7F96538F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83EB87A1-E39D-4982-83F3-47C7F96538F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83EB87A1-E39D-4982-83F3-47C7F96538F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83EB87A1-E39D-4982-83F3-47C7F96538F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBC2E774-EBC5-44B6-87A3-6D6BDB69BD09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBC2E774-EBC5-44B6-87A3-6D6BDB69BD09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBC2E774-EBC5-44B6-87A3-6D6BDB69BD09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBC2E774-EBC5-44B6-87A3-6D6BDB69BD09}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
