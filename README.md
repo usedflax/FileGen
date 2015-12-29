@@ -24,7 +24,7 @@ filegen "D:\Henta-I mean work stuff\" -fd 420
 - To create files and folders, the order of "f" and "d" does not matter ("-fd" or "-df").
 
 ## The GUI
-Right now, there is only one thing to say here: **DO NOT DELETE FileGen.exe!** or else the GUI version will not work.
+Right now, there is only one thing to say here: **DO NOT DELETE FileGen.exe!** or else the GUI version will not work. It relies on the command line version to do the actual operations.
 
 ## To Do
 - GUI (via WPF)
