@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("File Generator")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("FileGen")]
+[assembly: AssemblyDescription("A lightweight file/folder generator for Windows.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("File Generator")]
-[assembly: AssemblyCopyright("Copyright ©  2015")]
+[assembly: AssemblyProduct("FileGen")]
+[assembly: AssemblyCopyright("Copyright © Stephen Reynolds 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

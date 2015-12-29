@@ -7,12 +7,12 @@ using System.Windows;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("File Generator GUI")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("FileGen GUI")]
+[assembly: AssemblyDescription("A lightweight file/folder generator for Windows.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("File Generator GUI")]
-[assembly: AssemblyCopyright("Copyright ©  2015")]
+[assembly: AssemblyProduct("FileGen GUI")]
+[assembly: AssemblyCopyright("Copyright © Stephen Reynolds 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
