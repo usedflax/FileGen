@@ -1,4 +1,21 @@
-﻿using System;
+﻿/****************************** Module Header ******************************\
+Module Name:  Program.cs
+Project:      FileGen
+Copyright (c) Stephen Reynolds.
+
+Entry point and other operations. Sole source file.
+
+This source is subject to the MIT License (MIT).
+See https://github.com/usedflax/FileGen/blob/master/LICENSE.
+All other rights reserved.
+
+THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF ANY KIND, 
+EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE IMPLIED 
+WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.
+\***************************************************************************/
+
+
+using System;
 using System.IO;
 
 namespace FileGen
