@@ -1,8 +1,6 @@
 # FileGen
 Lightweight file/folder generator for windows.
 
----
-
 ## Command Line Arguments
 To use FileGen via the command line, you must run it using the following format:
 ```
