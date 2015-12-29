@@ -33,15 +33,15 @@ filegen "D:\Henta-I mean work stuff\" -fd 420
 - To create files and folders, the order of "f" and "d" does not matter ("-fd" or "-df").
 
 ## To Do
-- GUI (via WPF)
-- Better error handling
-- Allow custom names/extensions
-- Allow random generation count
-- Allow random naming/extensions
-- Allow nested generation
-- Allow random text in files
-- Help command
-- Cross-platform (Unix/Linux)
+- [x] GUI (via WPF)
+- [ ] Better error handling
+- [ ] Allow custom names/extensions
+- [ ] Allow random generation count
+- [ ] Allow random naming/extensions
+- [ ] Allow nested generation
+- [ ] Allow random text in files
+- [ ] Help command
+- [ ] Cross-platform (Unix/Linux)
 
 ## License
 FileGen is under the [MIT license](LICENSE).
