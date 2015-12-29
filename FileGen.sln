@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileGen GUI", "File Generator GUI\FileGen GUI.csproj", "{83EB87A1-E39D-4982-83F3-47C7F96538F3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileGen GUI", "FileGen GUI\FileGen GUI.csproj", "{83EB87A1-E39D-4982-83F3-47C7F96538F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileGen", "File Generator\FileGen.csproj", "{EBC2E774-EBC5-44B6-87A3-6D6BDB69BD09}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileGen", "FileGen\FileGen.csproj", "{EBC2E774-EBC5-44B6-87A3-6D6BDB69BD09}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
