@@ -15,8 +15,6 @@ namespace FileGen
         {
             DirectoryInfo dir = null;
             Action action = Action.None;
-            //string name;
-            //string ext;
             int count = 0;
 
             // Get inputs via arguments if present
