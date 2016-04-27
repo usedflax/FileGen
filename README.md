@@ -34,6 +34,7 @@ filegen "D:\work stuff\" -fd 420
 
 ## To Do
 - [x] GUI (via WPF)
+- [ ] Generate in a separate thread
 - [ ] Better error handling
 - [ ] Allow custom names/extensions
 - [ ] Allow random generation count
