@@ -24,7 +24,7 @@ filegen path -action count
 
 ### Example
 ```
-filegen "D:\Henta-I mean work stuff\" -fd 420
+filegen "D:\work stuff\" -fd 420
 ```
 
 ### Notes
