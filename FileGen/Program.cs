@@ -30,7 +30,7 @@ namespace FileGen
         /// </summary>
         /// <param name="args">
         ///     Must follow format: path -action count.
-        ///     Example: filegen "D:\Henta-I mean work stuff\" -fd 420
+        ///     Example: filegen "D:\work stuff\" -fd 420
         ///     See readme.md for additional details
         /// </param>
         static void Main(string[] args)
